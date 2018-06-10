@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <form>
+        <label for="text">Text</label><br>
+        <input type="text" name="text" id="text" placeholder="Some text"/><br><br>
+        <label for="number">Number</label><br>
+        <input type="number" step="1" id="number" name="number" placeholder="0"/><br><br>
+        <label for="group1">Radio</label><br>
+        <input type="radio" value="1" name="group1"/>Rad1
+        <input type="radio" value="2" name="group1"/>Rad2
+        <input type="radio" value="3" name="group1"/>Rad3<br><br>
+
+        <label for="opts">Dropdown</label><br>
+        <select name="opts"  id="opts">
+                <option value="1">First</option>
+                <option value="2">Second</option>
+                <option value="3">Third</option>
+                <option value="4">Fourth</option>
+        </select><br><br>
+
+        <label for="area">TextArea</label><br>
+        <textarea name="area" id="area" rows="10" cols="30" placeholder="Some big text"></textarea>
+
+        <label for="date">Date</label><br>
+        <input type="date" id="date" name="date" list="thesedates">
+        <datalist id="thesedates">
+            <option label="Day1">2014-02-02</option>
+            <option label="Day2">2014-02-14</option>
+            <option label="Day3">2014-06-14</option>
+        </datalist>
+
+        <br/><br/><br/>
+        <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
