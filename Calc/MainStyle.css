@@ -1,0 +1,18 @@
+.calcBtn{
+	width : 36px;
+	padding : 2px 5px;
+}
+
+.calcScreen{
+	height : 38px;
+	background-color : white;
+	resize : vertical;
+}
+
+tr td {
+	border:1pt solid silver;
+}
+
+table{
+	border:2px solid grey;
+}

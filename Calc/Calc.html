@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<title>Test</title>
+		<script src="D:\AngularJSPrac\angular-1.5.7\angular.min.js"></script>
+		<script src="D:\AngularJSPrac\Calc\CalcController.js"></script>
+		<link type="text/css" rel="stylesheet" href="MainStyle.css">
+	</head>
+	<body ng-app="Calculator">
+		<div ng-controller="CalcCtrl">
+			<!-- <input type="text" class="calcScreen" value={{screenText}}>
+			<p>{{evalText}}</p> -->
+			<table>
+				<tr>
+					<td colspan="4"><textarea class="calcScreen" disabled=true>{{screenText+"\n="}} {{evalText}}</textarea></td>
+				</tr>
+				<tr>
+					<td><button class="calcBtn" ng-click="handleInput('1')">1</button></td>
+					<td><button class="calcBtn" ng-click="handleInput('2')">2</button></td>
+					<td><button class="calcBtn" ng-click="handleInput('3')">3</button></td>
+					<td><button class="calcBtn" ng-click="handleInput('+')">+</button></td>
+				</tr>
+				<tr>
+					<td><button class="calcBtn" ng-click="handleInput('4')">4</button></td>
+					<td><button class="calcBtn" ng-click="handleInput('5')">5</button></td>
+					<td><button class="calcBtn" ng-click="handleInput('6')">6</button></td>
+					<td><button class="calcBtn" ng-click="handleInput('-')">-</button></td>
+				</tr>
+				<tr>
+					<td><button class="calcBtn" ng-click="handleInput('7')">7</button></td>
+					<td><button class="calcBtn" ng-click="handleInput('8')">8</button></td>
+					<td><button class="calcBtn" ng-click="handleInput('9')">9</button></td>
+					<td><button class="calcBtn" ng-click="handleInput('*')">*</button></td>
+				</tr>
+				<tr>
+					<td><button class="calcBtn" ng-click="handleInput('0')">0</button></td>
+					<td><button class="calcBtn" ng-click="handleInput('<-')">Del</button></td>
+					<td><button class="calcBtn" ng-click="handleInput('R')">R</button></td>
+					<td><button class="calcBtn" ng-click="handleInput('/')">/</button></td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
+<!-- <!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>Hello World, AngularJS - ViralPatel.net</title>
+	<script type="text/javascript" src="D:\AngularJSPrac\angular-1.5.7\angular.min.js"></script>
+</head>
+<body>
+	
+	Write some text in textbox:
+	<input type="text" ng-model="sometext" />
+
+	<h1>Hello {{ sometext }}</h1>
+	
+</body>
+</html> -->
