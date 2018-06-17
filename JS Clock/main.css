@@ -1,0 +1,43 @@
+body {
+    background: lightblue;
+}
+
+.clock-container {
+    border: 1px solid black;
+    display: inline-block;
+    margin: auto;
+}
+
+.clearfix::after { 
+    content: "";
+    display: block; 
+    height: 0; 
+    clear: both;
+ }
+
+.time{
+    border: 1px solid black;
+    margin: 3px;
+    float: left;
+}
+
+.time-desc{
+    font-size:30px
+}
+
+.time-value{
+    font-size: 100px;
+    font-family: Cambria;
+}
+
+.blinking{
+	animation:blinkingText 1s infinite;
+}
+@keyframes blinkingText{
+    0%{	color: transparent;	}
+    15%{	color: transparent;	}
+	40%{ color: currentColor; }
+    60%{ color: currentColor; }
+    85%{ color: transparent; }
+	100%{ color: transparent; }
+}
